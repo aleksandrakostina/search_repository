@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./style.css" rel="stylesheet">
+  <title>Search repository</title>
+</head>
+<body>
+  <main class="app">
+    <div class="container app__container">
+      <div class="search app__search">
+        <form class="form-search">
+          <input class="form-search__input" type="text" placeholder="Search repository by name">
+        </form>
+        <div class="dropdown">
+          <ul class="dropdown__list"></ul>
+        </div>
+      </div>
+      <div class="info app__info">
+        <p class="info__text"></p>
+      </div>
+      <div class="repositories app__repositories">
+        <ul class="repositories__list"></ul>
+      </div>
+    </div>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>

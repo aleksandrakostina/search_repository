@@ -1,0 +1,136 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  margin: 0;
+  font-weight: 400;
+  height: 100%;
+}
+
+.app {
+  padding: 40px 0;
+  background: antiquewhite;
+  height: 100%;
+}
+
+.app__info {
+  margin-top: 15px;
+}
+
+.app__repositories {
+  margin-top: 50px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 940px;
+  padding: 0 16px;
+}
+
+.search {
+  background: #ffffff;
+}
+
+.form-search__input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown__list {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.dropdown__list--hidden {
+  visibility: hidden;
+}
+
+.dropdown__item {
+  list-style: none;
+}
+
+.dropdown__btn {
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  background: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+  color: #766c6c;
+  background: #fbfbfb;
+}
+
+.dropdown__btn:hover {
+  background: #bebebe;
+}
+
+.repositories__list {
+  margin: 0;
+  padding: 0;
+}
+
+.repositories__item {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #ffffff;
+}
+
+.repositories__text {
+  margin: 0 0 10px 0;
+}
+
+.repositories__text:last-child {
+  margin: 0;
+}
+
+.repositories__btn {
+  cursor: pointer;
+  align-self: center;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background: #584dee;
+  border: none;
+  border-radius: 5px;
+}
+
+.repositories__btn::after {
+  position: absolute;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "\274c";
+  font-size: 28px;
+  color: #fff;
+}
+
+.info__text {
+  margin: 0;
+}
